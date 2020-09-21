@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: serif;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body{
+    background-color: #ffffff !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%23eaf082' fill-opacity='0.8' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
+}
+p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    
+}
+/*----------------------------NAVIGATION BAR-----------------------*/
+.navbar {
+    background: hsla(206, 100%, 45%, 0.712);
+    height: 82px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    box-sizing: border-box;
+
+}
+
+nav.navbar {
+    border-bottom: 1px solid yellow;
+    margin-bottom: 0;
+    z-index: 16;
+}
+
+a.text-center.nav-li {
+    width: 130px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+}
+
+a.text-center.nav-li:hover {
+    background-color: #3e99df;
+    border-radius: 15px;
+    color: rgb(255, 255, 0);
+}
+
+@media (max-width:1182px) {
+    div#quienes-somos.col-md-6 {
+        margin-left: 105px;
+        margin-top: 205px;
+        width: 500px;
+
+    }
+
+    h1#titulo.text-center.titulos {
+        margin-top: 0px;
+    }
+
+    .carta-jardin {
+        clear: both;
+    }
+
+    div.card.pull-left.carta {
+        width: 20%;
+        /*margin-left: 20%;*/
+    }
+    .requisitos{
+        background: hsla(200, 20%, 97%, 0.575);
+        font-size: 15px;
+        border-radius: 15%;
+    }
+
+}
+
+
+@media (max-width: 1022px) {
+
+
+    a.text-center.nav-li {
+        width: 105px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin-top:10%;
+        
+    }
+
+    div#myCarousel.carousel.slide.col-md-7 {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    div#svg.col-md-5 {
+        width: 400px;
+        margin-top: 90px;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+
+    h1#titulo.text-center {
+        margin-top: 0;
+
+    }
+
+
+    #quienes-somos {
+        margin: 0%;
+     }
+
+    div#quienes-somos.col-md-6 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width: 80%;
+        margin-left: 10%;
+       }
+
+    
+
+    article#services {
+        margin-top: 300px;
+
+
+    }
+
+    #none {
+        display: none;
+    }
+
+     div.card.pull-left.carta {
+        width: 70%;
+        /*margin-left: 15%;*/
+    }
+   
+
+}
+@media (max-width:992px){
+    .contactos.requisitos{
+        margin-left:0px;
+    }
+    .map{
+        width: 70%;
+        margin-left:15%;
+        margin-right: 15%;
+        padding:0 !important;
+        margin:auto;
+
+    }
+    iframe{
+        width:100%;
+        height:300px;
+    }
+    div#svg.col-md-5 {
+        margin:auto;
+
+    }
+}
+@media (max-width: 767px){
+    #myNavbar{
+        background: hsla(206, 100%, 45%, 0.712);
+        margin-left:-25px;
+        margin-right:-25px;
+    }
+    a.text-center.nav-li {
+        width: 100%;
+        font-size: 20px;
+        margin-top:0;
+        height: 81px;
+        padding-top: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #servicios{
+        margin-top:400px;
+        }
+    #min{
+        display: none;
+    }
+    #matriculas{
+        background: url(assets/receptionist.svg);
+        background-repeat:no-repeat;
+        background-size: contain;
+        background-position-x:100px;
+    }
+    .requisitos{
+        background: hsla(200, 20%, 97%, 0.575);
+        font-size: 15px;
+        border-radius: 15%;
+    }
+    #periodo{
+        background:none;
+        font-size: 15px;
+        border-radius: 15%;
+    }
+    .contactos.requisitos{
+        margin-left:10px;
+    }
+}
+@media (max-width: 533px){
+    #servicios{
+        margin-top:438px;
+    }
+    #matriculas{
+        background-repeat:no-repeat;
+        background-size: contain;
+        background-position-x:5px;
+    }
+    #periodo{
+        background:none;
+        font-size: 15px;
+        border-radius: 15%;
+    }
+   
+}
+@media (max-width:378px){
+    div#svg.col-md-5 {
+        width: 320px;
+        background-position-x: -50px;
+        margin-left:10%;
+        margin-right:10%;
+   }
+   article#services {
+       margin-top:480px;
+}
+h1#inscripciones{
+    margin-bottom: 10px;
+}
+#matriculas{
+    background-position-y:80px;
+}
+h1#contactenos{
+margin-bottom:20px;
+}
+}
+
+/*-------------------------------button responsive-----------------------*/
+button.navbar-toggle {
+    color: #ffffff;
+    border: solid 1px;
+}
+
+button.navbar-toggle span {
+    color: #ffffff;
+    border: solid 1px;
+}
+
+/*-------------------------------logo and brand---------------------------*/
+#logo {
+    background: url(assets/logo.png) center;
+    background-repeat: no-repeat;
+    background-position-y: -32px;
+    height: 70px;
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.navbar-brand a {
+    color: #ffffff;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/*-------------------------------------BANNER------------------------------*/
+#myCarousel {
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+
+}
+
+.carousel-indicators {
+    position: relative;
+
+}
+
+#slider-one {
+    background: url(assets/grado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider-two {
+    background: url(assets/bannerprueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider-tres{
+    background: url(assets/bannertres.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 1px ;
+}
+
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+#historia {
+    margin-top: 80px;
+}
+
+#historia-h {
+    margin-top: 60px;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+div.row.hola {
+    background: #0082e6;
+    margin-top: 83px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+div#intro {
+    width: 100%;
+    height: 400px;
+    background: url(assets/wave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -1px;
+    background-position-y: -50px;
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+#section {
+
+    top: 420px;
+}
+
+#svg {
+    margin-top: 200px;
+    margin-left: 5%;
+    width: 350px;
+    height: 300px;
+    background: url(assets/problem.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/******---------------------------------------QUIENES SOMOS------------------------------------*****/
+#quienes-somos {
+    margin-left: 15%;
+    margin-top:180px;
+}
+
+section.margen {
+    height: 500px;
+}
+
+/******---------------------------------------SERVICES------------------------------------*****/
+#services {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.titulos {
+    color: #0082e6;
+    margin-bottom: 60px;
+    font-size: 50px;
+
+}
+
+#parvulo {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px hsla(59, 100%, 61%, 0.795);
+    background: url(assets/parvulo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 25px;
+
+}
+
+#pre-jardin {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px #0082e6;
+    background: url(assets/maria-victoria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#jardin {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px hsla(59, 100%, 61%, 0.795);
+    background: url(assets/kenny.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#transicion {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px #0082e6;
+    background: url(assets/bannerprueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.card-body {
+    width: 250px;
+    height: 200px;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    margin-left: 65px;
+    margin-right: 0px;
+    box-sizing: border-box;
+}
+
+.carta {
+    width: 270px !important;
+
+}
+
+h1#servicios {
+
+    margin-bottom: 80px;
+}
+
+#matriculas {
+    height: 400px;
+    margin: 0;
+
+}
+
+#contactos {
+    height: 460px;
+    margin-bottom: 10px;
+
+}
+
+.contactos {
+    margin-left: 60px;
+    padding:25px;
+}
+
+.icons {
+    margin-left: 35px;
+    font-size: 48px;
+    
+}
+a.icons:hover{
+    color: rgb(8, 7, 7);
+    text-decoration:none ;
+}
+
+.derecha {
+    text-align: right;
+    margin-top: 40px;
+}
+
+footer {
+    width: 100%;
+}
+
+/*-----------------------------INSCRIPCIONES------------------------------------*/
+.requisitos{
+    background: hsla(200, 20%, 97%, 0.575);
+    font-size: 15px;
+    border-radius: 15%;
+}
+/*-----------------------------END INSCRIPCIONES---------------------------------*/
